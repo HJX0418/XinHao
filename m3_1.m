@@ -1,6 +1,6 @@
-T  = 100; f1 = 1/T; N =256;
+ T  = 100; f1 = 1/T; N =256;
 t =linspace(0,T,N);  dt = T/(N-1);
-x = 1.5*[ones(1,N/4),zeros(1,3*N/4)];
+x = [ones(1,N/4),zeros(1,3*N/4)];
 n = [-20:20]; 
 w1 = 2*pi*f1;
 X = x*exp(-j*t'*n*w1)*dt/T;
